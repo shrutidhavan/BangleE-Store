@@ -43,7 +43,6 @@ public class RegistrationServiceimpl implements RegistrationService{
 			rold.setName(r.getName());
 			rold.setAddress(r.getAddress());
 			rold.setCity(r.getCity());
-			rold.setGender(r.getGender());
 			rold.setContact(r.getContact());
 			rold.setEmailid(r.getEmailid());
 			rold.setPassword(r.getPassword());
