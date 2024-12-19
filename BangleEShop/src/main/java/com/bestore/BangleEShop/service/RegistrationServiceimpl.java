@@ -55,21 +55,12 @@ public class RegistrationServiceimpl implements RegistrationService{
 	}
 
 	@Override
-	public List<Registration> getAll11() {
+	public List<Registration> login(String emailid, String password) {
 		// TODO Auto-generated method stub
-		return null;
+		return regRepo.findAllByEmailidAndPassword(emailid, password);
 	}
 
-	@Override
-	public List<Registration> getAll1() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Registration insertrecord1(Registration r) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+   
 
 }

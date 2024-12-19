@@ -19,14 +19,14 @@ public class RegistrationController {
 @Autowired
 private RegistrationService rs;
 
-
-@GetMapping("/registration")
-public List<Registration>handleget()
+@GetMapping("/registrations")
+public List<Registration> handleget()
 {
-	return ((RegistrationService) rs).getAll1();
+	return rs.getAll();
 }
+
 @PostMapping("/addreg")
-public Registration ad(@RequestBody Registration r)
+public Registration add(@RequestBody Registration r)
 {
 	return rs.insertrecord(r);
 }
@@ -41,5 +41,9 @@ public Registration update(@PathVariable("rid")int i,@RequestBody Registration r
 {
 	return rs.updaterecord(i,r);
 }
-
+@GetMapping("/login/{emailid}/{password}")
+public List<Registration> login(@PathVariable("emailid")String emailid,@PathVariable("password")String password)
+{
+	return rs.login(emailid, password);
+}
 }

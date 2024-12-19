@@ -7,13 +7,11 @@ import com.bestore.BangleEShop.model.Registration;
 public interface RegistrationService {
 	
 Registration insertrecord(Registration r);
-List<Registration> getAll11();
+List<Registration> getAll();
 void del(int ri);
 Registration updaterecord(int i,Registration r);
-List<Registration> getAll1();
-List<Registration> getAll();
-Registration insertrecord1(Registration r);
 
+List<Registration> login(String emailid,String password);
 
 
 
