@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bestore.BangleEShop.model.Registration;
 import com.bestore.BangleEShop.service.RegistrationService;
+
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/registration/")
