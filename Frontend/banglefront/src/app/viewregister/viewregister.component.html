@@ -1,1 +1,26 @@
-<p>viewregister works!</p>
+<div class="container">
+    <h1 class="text-center">Registration</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Contact</th>
+                <th>Email Id</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngfor="let r of rarr">
+            <td>{{r.regid}}</td>
+            <td>{{r.name}}</td>
+            <td>{{r.address}}</td>
+            <td>{{r.city}}</td>
+            <td>{{r.contact}}</td>
+            <td>{{r.emailid}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

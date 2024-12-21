@@ -23,12 +23,13 @@ export const routes: Routes =
 {path:'login',component:LoginComponent},
 {path:'adminlogin',component:AdminLoginComponent},
 {path:'feedback',component:FeedbackComponent},
-{path:'viewfeedback',component:ViewfeedbackComponent},
+{path:'vfeedback',component:ViewfeedbackComponent},
 {path:'booking',component:BookingComponent},
 {path:'material',component:MaterialComponent},
 {path:'viewdesign',component:ViewDesignComponent},
 {path:'vieworder',component:ViewOrderComponent},
 {path:'viewoffers',component:ViewoffersComponent},
 {path:'viewproduct',component:ViewproductComponent},
-{path:'viewsizes',component:ViewsizesComponent}
+{path:'viewsizes',component:ViewsizesComponent},
+{path:'viewregister',component:ViewregisterComponent},
 ];

@@ -19,14 +19,14 @@
         </div>
         <div class="col-sm-9">
 <h1 class="text-center">Admin Login Here</h1>
-<form>
+<form (ngSubmit)="submitdata()">
     <div class="form-group">
-      <label for="emailid">Email Id:</label>
-      <input type="emailid" class="form-control" id="emailid"  name="emailid">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email"  name="email"[(ngModel)]="adm.email">
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="password" name="password">
+      <input type="password" class="form-control" id="password" name="password"[(ngModel)]="adm.password">
     </div>
     <div class="checkbox">
       <label><input type="checkbox"> Remember me</label>
